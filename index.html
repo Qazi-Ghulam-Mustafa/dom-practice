@@ -5,20 +5,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {
+            height: 30px;
+            border: none;
+            border-radius: 8px;
+
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 10px 20px 10px;
+            padding: 20px 10px 20px 10px;
+            background: rgb(206, 195, 195);
+            align-items: center;
+
+        }
+
+        h1 {
+            color: black;
+        }
+
+        img {
+            height: 100px;
+            width: 100px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        button {
+            padding: 10px 20px 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            background: green;
+            color: white;
+        }
+
+        b {
+            color: red;
+        }
+        #CnicSuccessfuly{
+            color: green;
+        }
+    </style>
 </head>
 
 <body>
-   <span>Email :</span> <input type="email" id="email" placeholder="Enter Your Email">
-    <b id="emailError"></b>
-    <br>
-    <span>Password :</span> <input type="password" name="" id="password" placeholder="Enter Your Password">
-    <b id="passwordError"></b>
-    <br>
-    <span>Roll Number :</span>
-    <input type="text" id="rollNumber" readonly>
-    <b id="message"></b>
-    <br>
-    <button onclick="submit()">Submit</button>
+    <div>
+        <img src="c:\Users\Admin\Downloads\NadraImg.png" alt="">
+        <h1>Cnic Generator</h1>
+        <p>Name</p>
+        <input type="text" name="" id="userName" placeholder="Enter your name"><br>
+        <b id="nameError"></b>
+        <br>
+        <p>Email</p>
+        <input type="text" id="email" placeholder="Enter your email"><br>
+        <b id="emailError"></b>
+        <br>
+        <p>Password</p>
+        <input type="password" id="password" placeholder="Enter your password"><br>
+        <b id="passwordError"></b>
+        <br>
+        <p>Contact Number</p>
+        <input type="number" name="" id="contactNumber" placeholder="Enter your contact number"><br>
+        <b id="contactNumberError"></b>
+        <br>    
+        <p>Age</p>
+        <input type="number" id="age" placeholder="Enter your age"><br>
+        <b id="ageError"></b>
+        <br>
+        <P>Cnic</P>
+        <input type="text" id="cnic" readonly placeholder="*****-*******-*">
+        <br>
+        <b id="CnicSuccessfuly"></b>
+    </div>
+    <button onclick="submitBtn()">Submit</button>
 
     <script src="script.js"></script>
 </body>
