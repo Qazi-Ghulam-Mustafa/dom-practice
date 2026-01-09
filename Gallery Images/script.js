@@ -24,6 +24,7 @@ function nextBtn() {
     if (currentIndex > 0) {
         previous.style.display = "inline"
     }
+
 }
 
 function previousBtn() {
@@ -34,6 +35,9 @@ function previousBtn() {
     }
     if (currentIndex == 0) {
         previous.style.display = "none"
+    }
+    if (currentIndex == galleryArray.length - 2) {
+        next.style.display = "inline"
     }
 }
 
