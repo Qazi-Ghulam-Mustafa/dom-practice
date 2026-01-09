@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional gallery</title>
+    <style>
+        img {
+            display: block;
+            width: 1000px;
+            height: 600px;
+            border-radius: 15px;
+            margin: auto;
+        }
+
+        .button {
+            margin: auto;
+            text-align: center;
+            align-items: center;
+        }
+
+        .button1 {
+            display: none;
+            margin-top: 20px;
+            font-size: 30px;
+            background: #000;
+            color: rgb(243, 240, 240);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .button2 {
+            margin-top: 20px;
+            font-size: 30px;
+            background: #000;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://media.licdn.com/dms/image/v2/D4D12AQEKiIL1VoEa1A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1684499786521?e=2147483647&v=beta&t=tkcrimXXoyUNIXBpOcvIGm-skPMURb6PmHhkG9fHlFU"
+        alt="" id="image">
+    <div class="button">
+        <button class="button1" id="previous" onclick="previousBtn()">Previous</button>
+        <button class="button2" id="next" onclick="nextBtn()">Next</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
