@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+}
+
+.Container {
+    border: 2px solid black;
+    padding: 20px;
+    width: 600px;
+    /* display: block; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: #000;
+}
+
+input {
+    width: 600px;
+    height: 35px;
+    ;
+}
+
+button {
+    margin-top: 30px;
+    width: 70px;
+    border-radius: 6px;
+    cursor: pointer;
+    background: yellow;
+}
+
+.button {
+    margin: auto;
+
+}
+
+.buttonItem {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
