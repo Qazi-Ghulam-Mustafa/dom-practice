@@ -9,36 +9,50 @@
 </head>
 
 <body>
-    <h1>Calculator</h1>
     <div class="Container">
-        <input type="number" readonly>
+        <h1>Calculator</h1>
+        <input type="text" readonly id="inputResult">
         <div class="button">
             <div class="buttonItem">
-                <button>Button 1</button>
-                <button>Button 2</button>
-                <button>Button 3</button>
-                <button>Button 4</button>
+                <button class="variable">X<sup>3</sup></button>
+                <button class="variable">X<sup>2</sup></button>
+                <button class="variable">X</button>
+                <button class="clear" onclick="clear()">C</button>
 
             </div>
             <div class="buttonItem">
-                <button>Button 1</button>
-                <button>Button 2</button>
-                <button>Button 3</button>
-                <button>Button 4</button>
+                <button class="variable" onclick="number('.')">.</button>
+                <button class="variable">√</button>
+                <button class="variable">∛</button>
+                <button class="operator" onclick="number('/')">/</button>
 
             </div>
             <div class="buttonItem">
-                <button>Button 1</button>
-                <button>Button 2</button>
-                <button>Button 3</button>
-                <button>Button 4</button>
+                <button class="number" onclick="number('1')">1</button>
+                <button class="number" onclick="number('2')">2</button>
+                <button class="number" onclick="number('3')">3</button>
+                <button class="operator" onclick="number('*')">*</button>
 
             </div>
             <div class="buttonItem">
-                <button>Button 1</button>
-                <button>Button 2</button>
-                <button>Button 3</button>
-                <button>Button 4</button>
+                <button class="number" onclick="number('4')">4</button>
+                <button class="number" onclick="number('5')">5</button>
+                <button class="number" onclick="number('6')">6</button>
+                <button class="operator" onclick="number('-')">-</button>
+
+            </div>
+            <div class="buttonItem">
+                <button class="number" onclick="number('7')">7</button>
+                <button class="number" onclick="number('8')">8</button>
+                <button class="number" onclick="number('9')">9</button>
+                <button class="operator" onclick="number('+')">+</button>
+
+            </div>
+            <div class="buttonItem">
+                <button class="operator" onclick="operator('+')">-/+</button>
+                <button class="number" onclick="number('0')">0</button>
+                <button class="operator" onclick="operator('%')">%</button>
+                <button class="operator" onclick="equal('=')">=</button>
 
             </div>
         </div>

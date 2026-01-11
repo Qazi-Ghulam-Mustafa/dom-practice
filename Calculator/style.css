@@ -1,32 +1,44 @@
+body {
+    background-image: url(https://thumbs.dreamstime.com/b/maths-trigonometry-hand-drawn-formulas-background-drawings-123064671.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
 h1 {
     text-align: center;
+    color: white;
 }
 
 .Container {
     border: 2px solid black;
     padding: 20px;
-    width: 600px;
+    width: 500px;
     /* display: block; */
     margin: auto;
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    border-radius: 10px;
+    border-radius: 30px;
     background: #000;
+    flex-wrap: wrap;
 }
 
 input {
-    width: 600px;
+    width: 500px;
     height: 35px;
-    ;
+    text-align: right;
+    font-size: 28px;
 }
 
 button {
     margin-top: 30px;
-    width: 70px;
-    border-radius: 6px;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
     cursor: pointer;
-    background: yellow;
+    background: #ffff00;
+    font-weight: 600;
+    font-size: 24px;
 }
 
 .button {
@@ -38,4 +50,15 @@ button {
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
+}
+
+.variable{
+    background: rgb(88, 168, 234);
+}
+.clear{
+    background: rgb(255, 132, 0);
+}
+.number{
+    background-color: rgb(118, 117, 117);
+    color: white;
 }
