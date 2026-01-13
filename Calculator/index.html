@@ -6,24 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 <body>
     <div class="Container">
-        <h1>Calculator</h1>
+        <div style="display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-between;">
+            <h1>Calculator</h1>
+            <div style="display: flex;flex-direction: row;flex-wrap: nowrap;margin-top: 30px;">
+                <div style="color: white;padding-right: 10px;">Dual Power</div>
+                <div style="border: 1px solid rgb(188, 182, 182);width: 20px;height: 20px;background: rgb(135, 7, 7);">
+                </div>
+                <div style="border: 1px solid rgb(188, 182, 182);width: 20px;height: 20px;background: rgb(135, 7, 7);">
+                </div>
+                <div style="border: 1px solid rgb(188, 182, 182);width: 20px;height: 20px;background: rgb(135, 7, 7);">
+                </div>
+                <div style="border: 1px solid rgb(188, 182, 182);width: 20px;height: 20px;background: rgb(135, 7, 7);">
+                </div>
+            </div>
+        </div>
         <input type="text" readonly id="inputResult">
         <div class="button">
             <div class="buttonItem">
-                <button class="variable">X<sup>3</sup></button>
-                <button class="variable">X<sup>2</sup></button>
-                <button class="variable">X</button>
-                <button class="clear" onclick="clear()">C</button>
+                <button class="variable" onclick="cube()">X<sup>3</sup></button>
+                <button class="variable" onclick="square()">X<sup>2</sup></button>
+                <button class="variable" onclick="backSpace()">←</button>
+                <button class="clear" onclick="clearAll()">C</button>
 
             </div>
             <div class="buttonItem">
-                <button class="variable" onclick="number('.')">.</button>
-                <button class="variable">√</button>
-                <button class="variable">∛</button>
+                <button class="variable" onclick="cubeRoot()">∛</button>
+                <button class="variable" onclick="squareRoot()">√</button>
+                <button class="variable" onclick="percentage()">%</button>
                 <button class="operator" onclick="number('/')">/</button>
 
             </div>
@@ -49,9 +63,9 @@
 
             </div>
             <div class="buttonItem">
-                <button class="operator" onclick="operator('+')">-/+</button>
+                <button class="operator" onclick="newSet('-')">-/+</button>
                 <button class="number" onclick="number('0')">0</button>
-                <button class="operator" onclick="operator('%')">%</button>
+                <button class="operator" onclick="number('.')">.</button>
                 <button class="operator" onclick="equal('=')">=</button>
 
             </div>
@@ -59,6 +73,7 @@
     </div>
 
     <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 
 </html>
