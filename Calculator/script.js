@@ -47,5 +47,23 @@ function cubeRoot() {
     inputResult.value = Math.cbrt(inputResult.value)
 }
 function percentage() {
-    inputResult.value=percentage
+    var Value = inputResult.value + "%"
+    if (Value.toString().includes("%")) {
+        var numb = parseFloat(Value);
+
+        result = numb / 100; //2+50% => 2+50, 50% => 50
+
+        inputResult.value = result;
+    }
+    if (Value.toString().includes("%") && Value.toString().includes("+")) {
+        var numb = Value.toString().split("+"); //2+50% , //2,50%
+
+        var num1 = Number(numb[0]);  // 2
+        var num2 = numb[1];  //50%
+        var num3 = parseFloat(num2) / 100;  //50% => 50/100
+        var num4 = parseFloat(num3) * Number(num1) // 0.5*2 => 1    
+
+        var result = num4 + num1 // 1+2 => 3
+        inputResult.value = result
+    }
 }
